@@ -112,6 +112,15 @@ nav .logo {
             -webkit-text-stroke-width: 0px;
             text-stroke-width: 0px;
             color: $global-link-color;
+            animation: .15s ease 0s thumbUpShake;
+            @keyframes thumbUpShake {
+                0% {}
+                50% {
+                    transform-origin: bottom left;
+                    transform: translateY(-3px) rotate(-2deg);
+                }
+                100% {}
+            }
         }
         -webkit-transition: 0.1s ease-in-out;
         transition: 0.1s ease-in-out;
