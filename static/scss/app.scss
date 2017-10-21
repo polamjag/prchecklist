@@ -103,6 +103,7 @@ nav .logo {
         vertical-align: middle;
         font-size: 28px;
         cursor: pointer;
+        user-select: none;
         &:focus {
             outline: none;
             text-shadow: lighten($global-link-color, 10%) 0 0 8px;
