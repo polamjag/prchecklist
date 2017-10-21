@@ -2,6 +2,8 @@
 @import 'node_modules/uikit/src/scss/mixins-theme.scss';
 @import 'node_modules/uikit/src/scss/uikit-theme.scss';
 
+$body-background-color: #fff;
+
 * {
     font-family: monospace;
     line-height: 2;
@@ -11,6 +13,7 @@ body {
     font-size: 18px;
     margin-top: 1em;
     color: #333;
+    background-color: $body-background-color;
 }
 
 #container {
@@ -93,7 +96,9 @@ nav .logo {
         border: 0;
         padding: 5px;
         background: transparent;
-        color: #DDD;
+        color: $body-background-color;
+        -webkit-text-stroke: 1.5px #aaa;
+        text-stroke: 1.5px #aaa;
         margin-right: 18px;
         vertical-align: middle;
         font-size: 28px;
@@ -103,6 +108,8 @@ nav .logo {
             text-shadow: lighten($global-link-color, 10%) 0 0 8px;
         }
         &.checked {
+            -webkit-text-stroke-width: 0px;
+            text-stroke-width: 0px;
             color: $global-link-color;
         }
         -webkit-transition: 0.1s ease-in-out;
