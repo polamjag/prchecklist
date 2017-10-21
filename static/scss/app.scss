@@ -100,18 +100,15 @@ nav .logo {
         cursor: pointer;
         &:focus {
             outline: none;
-            color: darken(#DDD, 10%);
+            text-shadow: lighten($global-link-color, 10%) 0 0 8px;
         }
         &.checked {
             color: $global-link-color;
-            &:focus {
-                color: lighten($global-link-color, 10%);
-            }
         }
         -webkit-transition: 0.1s ease-in-out;
         transition: 0.1s ease-in-out;
-        -webkit-transition-property: color, background-color, border-color;
-        transition-property: color, background-color, border-color;
+        -webkit-transition-property: text-shadow, color, background-color, border-color;
+        transition-property: text-shadow, color, background-color, border-color;
     }
 }
 
